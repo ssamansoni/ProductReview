@@ -1,0 +1,68 @@
+[
+  {
+    "review_id": 1,
+    "product_id": "A101",
+    "text": "Great quality and fast shipping!",
+    "rating": 5
+  },
+  {
+    "review_id": 2,
+    "product_id": "A101",
+    "text": "Loved it, will buy again.",
+    "rating": 4
+  },
+  {
+    "review_id": 3,
+    "product_id": "A101",
+    "text": "Okay product, a bit overpriced.",
+    "rating": 3
+  },
+  {
+    "review_id": 4,
+    "product_id": "B202",
+    "text": "Not as described, poor packaging.",
+    "rating": 2
+  },
+  {
+    "review_id": 5,
+    "product_id": "B202",
+    "text": "Average quality, delivery took long.",
+    "rating": 3
+  },
+  {
+    "review_id": 6,
+    "product_id": "C303",
+    "text": "Excellent! Exceeded expectations.",
+    "rating": 5
+  },
+  {
+    "review_id": 7,
+    "product_id": "C303",
+    "text": "Very satisfied, good value for money.",
+    "rating": 5
+  },
+  {
+    "review_id": 8,
+    "product_id": "D404",
+    "text": "Terrible experience, will not buy again.",
+    "rating": 1
+  },
+  {
+    "review_id": 9,
+    "product_id": "D404",
+    "text": "Product broke in a week.",
+    "rating": 1
+  },
+  {
+    "review_id": 10,
+    "product_id": "E505",
+    "text": "Decent product, nothing special.",
+    "rating": 3
+  },
+  {
+    "review_id": 11,
+    "product_id": "E505",
+    "text": "Works fine, but packaging was bad.",
+    "rating": 3
+  }
+]
