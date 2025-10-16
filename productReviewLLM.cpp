@@ -10,7 +10,7 @@ using namespace std;
 //API key
 string api_key = "YOUR_GROQ_API_KEY";
 
-string getSummary(string product,string prompt){
+string getLLMresponse(string product,string prompt){
     
     prompt = "These are the reviews and ratings by customer for product " + product + " Summarize all reviews " + prompt;
     string command = "curl -s -X POST https://api.groq.com/openai/v1/chat/completions "
@@ -60,6 +60,11 @@ struct ProductReview {
     int rating;
 };
 
+map<string,string> reviews;
+string getSummary(string product){
+     return getLLMresponse(product,reviews[product]);
+}
+
 int main() {
     
     ifstream file("reviews.json");
@@ -75,7 +80,7 @@ int main() {
         return 1; // Indicate an error
     }
 
-    map<string,string> reviews;
+    
 
     for(const auto &review:reviews_data){
         string product_id=review["product_id"];
@@ -106,7 +111,8 @@ int main() {
        }
        
        id--;
-       cout<<getSummary(v[id],reviews[v[id]])<<endl;
+       string product=v[id];
+       cout<<getSummary(product)<<endl;
        if(true)break;
       }
        
